@@ -1,0 +1,16 @@
+.signedAs {
+  margin-right: 20px;
+}
+.container.carousel {
+  margin-top: 80px;
+}
+.container.carousel .carousel-inner.carouselImage img {
+  height: 600px !important;
+  margin: auto;
+}
+.footer .center {
+  text-align: center;
+}
+.footer .copyright {
+  float: none !important;
+}
