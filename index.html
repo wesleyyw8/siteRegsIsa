@@ -1,31 +1,15 @@
-<html>
+<html ng-app="regsIsa">
 <head>
 	<meta charset="UTF-8">
-	<title>asd</title>
+	<title>Regs e Isa</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
 	<link rel="stylesheet" href="css/css.css">
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid">
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    <p class="navbar-text navbar-left">Regs e isa</p>
-		    	<div class="signedAs">
-			    	<p class="navbar-text navbar-right">Signed in as Mark Otto</p>
-		    	</div>
-		    	<form class="navbar-form navbar-right" role="search">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="user name">
-			        </div>
-			        <button type="submit" class="btn btn-default">Login</button>
-		    	</form>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
+		<div ui-view="topNavBar">
+		</div>
 		<div class="container carousel">
 			<div class="row">
 				<div class="col-sm-8">
@@ -98,6 +82,11 @@
 
 	<script src="bower_components/jquery/dist/jquery.js"> </script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"> </script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="app/app.js" ></script>
+	<script src="app/config.js" ></script>
+	
 </body>
 
 </html>
