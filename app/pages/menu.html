@@ -1,10 +1,9 @@
 <ul class="list-group">
-  <a href="#" class="list-group-item active">
-    Repetório
-  </a>
-  <a href="#" class="list-group-item">História</a>
-  <a href="#" class="list-group-item">Fotos</a>
-  <a href="#" class="list-group-item">Vídeos</a>
-  <a href="#" class="list-group-item">CDS</a>
-  <a href="#" class="list-group-item">Contato</a>
+	<a href="#" ng-click="menuClick('principal')" class="list-group-item" ng-class="{active: currentPage == 'principal'}">Início</a>	
+	<a href="#" class="list-group-item">Repetório</a>
+	<a href="#" class="list-group-item">História</a>
+	<a href="#" class="list-group-item">Fotos</a>
+	<a href="#" class="list-group-item">Vídeos</a>
+	<a href="#" class="list-group-item">CDS</a>
+	<a href="#" ng-click="menuClick('contato')" class="list-group-item" ng-class="{active: currentPage == 'contato'}">Contato</a>
 </ul>

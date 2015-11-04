@@ -12,10 +12,29 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 					//controller: 'PersonListController'
 				},
 				'menu': {
-					templateUrl: 'app/pages/menu.html'
+					templateUrl: 'app/pages/menu.html',
+					controller: 'MenuController'
+
 				}
 			}
 		})
+		.state('contato', {
+			url: "/contato",
+			views: {
+				'topNavBar': {
+					templateUrl: 'app/pages/topNavBar.html',
+					controller: 'TopNavBarController'
+				},
+				'main': {
+					templateUrl: 'app/pages/contato.html'
+					//controller: 'PersonListController'
+				},
+				'menu': {
+					templateUrl: 'app/pages/menu.html',
+					controller: 'MenuController'
+				}
+			}
+		});
 
 	$urlRouterProvider.otherwise('/');
 });
