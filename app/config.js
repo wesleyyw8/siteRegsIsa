@@ -1,20 +1,19 @@
 app.config(function ($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('list', {
+		.state('principal', {
 			url: "/",
 			views: {
 				'topNavBar': {
 					templateUrl: 'app/pages/topNavBar.html',
 					controller: 'TopNavBarController'
-				}/*,
-				'main': {
-					templateUrl: 'templates/list.html',
-					controller: 'PersonListController'
 				},
-				'search': {
-					templateUrl: 'templates/searchform.html',
-					controller: 'PersonListController'
-				}*/
+				'main': {
+					templateUrl: 'app/pages/carousel.html'
+					//controller: 'PersonListController'
+				},
+				'menu': {
+					templateUrl: 'app/pages/menu.html'
+				}
 			}
 		})
 

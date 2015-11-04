@@ -1,10 +1,10 @@
 .signedAs {
   margin-right: 20px;
 }
-.container.carousel {
+.container.principal {
   margin-top: 80px;
 }
-.container.carousel .carousel-inner.carouselImage img {
+.container.principal .carousel-inner.carouselImage img {
   height: 600px !important;
   margin: auto;
 }
